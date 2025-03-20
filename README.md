@@ -58,16 +58,16 @@ Respons:
 
 json
 {
-  "recipe_name": "Spaghetti Bolognese",/
-  "instructions": "Koka pastan...",/
-  "cooking_time": 30,/
-  "servings": 4,/
-  "ingredients": [/
-    {/
-      "ingredient_name": "Tomat",/
-      "quantity": 200/
-    },/
-    .../
+"recipe_name": "Spaghetti Bolognese",\
+  "instructions": "Koka pastan...",\
+  "cooking_time": 30,\
+  "servings": 4,\
+  "ingredients": [\
+    {\
+      "ingredient_name": "Tomat",\
+      "quantity": 200\
+    },\
+    ...\
   ]
 }
 
