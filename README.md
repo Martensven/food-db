@@ -16,16 +16,16 @@ json
 2. GET /recipes
 Beskrivning: Hämtar alla recept i databasen.
 
-Respons:
+Respons:\
 
 json
 [
   {
-    "recipe_id": 1,
-    "recipe_name": "Spaghetti Bolognese",
-    "instructions": "Koka pastan...",
-    "cooking_time": 30,
-    "servings": 4
+    "recipe_id": 1,\
+    "recipe_name": "Spaghetti Bolognese",\
+    "instructions": "Koka pastan...",\
+    "cooking_time": 30,\
+    "servings": 4\\
   },
   ...
 ]
@@ -34,14 +34,14 @@ json
 
 ### Beskrivning: Hämtar alla ingredienser i databasen.
 
-Respons:
+Respons:\
 
 json
 [
   {
-    "ingredient_id": 1,
-    "ingredient_name": "Tomat",
-    "quantity_type": "gram"
+    "ingredient_id": 1,\
+    "ingredient_name": "Tomat",\
+    "quantity_type": "gram"\
   },
   ...
 ]
@@ -54,7 +54,7 @@ Parametrar:
 
 recipeName (String): Namnet på receptet.
 
-Respons:
+Respons:\
 
 json
 {
@@ -77,18 +77,18 @@ json
 
 Request Body:
 
-json
-{
-  "recipe_name": "Spaghetti Bolognese",
-  "instructions": "Koka pastan...",
-  "cooking_time": 30,
-  "servings": 4
+json\
+{\
+  "recipe_name": "Spaghetti Bolognese",\
+  "instructions": "Koka pastan...",\
+  "cooking_time": 30,\
+  "servings": 4\
 }
 Respons:
 
-json
-{
-  "id": 1
+json\
+{\
+  "id": 1\
 }
 
 ## 6. POST /ingredients
@@ -97,21 +97,21 @@ json
 
 Request Body:
 
-json
-{
-  "ingredients": [
-    {
-      "ingredient_name": "Tomat",
-      "quantity_type": "gram"
+json\\
+{\\
+  "ingredients": [\
+    {\
+      "ingredient_name": "Tomat",\
+      "quantity_type": "gram"\
     },
     ...
   ]
 }
 Respons:
 
-json
-{
-  "message": "Ingredienser tillagda!"
+json\
+{\
+  "message": "Ingredienser tillagda!"\
 }
 
 ## 7. POST /recipe-ingredients
@@ -120,22 +120,22 @@ json
 
 Request Body:
 
-json
-{
-  "recipe_id": 1,
-  "ingredients": [
-    {
-      "ingredient_id": 2,
-      "quantity": 100
-    },
-    ...
+json\
+{\
+  "recipe_id": 1,\
+  "ingredients": [\
+    {\
+      "ingredient_id": 2,\
+      "quantity": 100\
+    },\
+    ...\
   ]
-}
-Respons:
+}\
+Respons:\
 
-json
-{
-  "message": "Ingredienser kopplade till receptet!"
+json\
+{\
+  "message": "Ingredienser kopplade till receptet!"\
 }
 ## 8. PUT /recipes/:id
 
@@ -145,21 +145,21 @@ Parametrar:
 
 id (Number): ID för receptet.
 
-Request Body:
+Request Body:\
 
-json
-{
-  "recipe_name": "Ny namn",
-  "instructions": "Ny instruktion",
-  "cooking_time": 45,
-  "servings": 6
-}
-Respons:
+json\
+{\
+  "recipe_name": "Ny namn",\
+  "instructions": "Ny instruktion",\
+  "cooking_time": 45,\
+  "servings": 6\
+}\
+Respons:\
 
-json
-{
-  "message": "Receptet uppdaterades!"
-}
+json\
+{\
+  "message": "Receptet uppdaterades!"\
+}\
 ## 9. PUT /ingredients/:id
 
 ### Beskrivning: Uppdaterar en ingrediens.
@@ -170,17 +170,17 @@ id (Number): ID för ingrediensen.
 
 Request Body:
 
-json
-{
-  "ingredient_name": "Ny namn",
-  "quantity_type": "Ny typ"
-}
-Respons:
+json\
+{\
+  "ingredient_name": "Ny namn",\
+  "quantity_type": "Ny typ"\
+}\
+Respons:\
 
-json
-{
-  "message": "Ingrediensen uppdaterades!"
-}
+json\
+{\
+  "message": "Ingrediensen uppdaterades!"\
+}\
 
 ## 10. PUT /recipe-ingredients/:id
 
@@ -192,15 +192,15 @@ id (Number): ID för kopplingen.
 
 Request Body:
 
-json
-{
-  "recipe_id": 1,
-  "ingredient_id": 2,
-  "quantity": 150
-}
+json\
+{\
+  "recipe_id": 1,\
+  "ingredient_id": 2,\
+  "quantity": 150\
+}\
 Respons:
 
-json
-{
-  "message": "Kopplingen uppdaterades!"
+json\
+{\
+  "message": "Kopplingen uppdaterades!"\
 }
