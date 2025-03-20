@@ -16,7 +16,7 @@ json
 2. GET /recipes
 Beskrivning: Hämtar alla recept i databasen.
 
-Respons:\
+Respons:
 
 json
 [
@@ -25,7 +25,7 @@ json
     "recipe_name": "Spaghetti Bolognese",\
     "instructions": "Koka pastan...",\
     "cooking_time": 30,\
-    "servings": 4\\
+    "servings": 4\
   },
   ...
 ]
@@ -34,7 +34,7 @@ json
 
 ### Beskrivning: Hämtar alla ingredienser i databasen.
 
-Respons:\
+Respons:
 
 json
 [
@@ -54,10 +54,10 @@ Parametrar:
 
 recipeName (String): Namnet på receptet.
 
-Respons:\
+Respons:
 
-json
-{
+json\
+{\
 "recipe_name": "Spaghetti Bolognese",\
   "instructions": "Koka pastan...",\
   "cooking_time": 30,\
@@ -84,6 +84,7 @@ json\
   "cooking_time": 30,\
   "servings": 4\
 }
+
 Respons:
 
 json\
@@ -97,8 +98,8 @@ json\
 
 Request Body:
 
-json\\
-{\\
+json\
+{\
   "ingredients": [\
     {\
       "ingredient_name": "Tomat",\
@@ -107,6 +108,7 @@ json\\
     ...
   ]
 }
+
 Respons:
 
 json\
@@ -131,7 +133,8 @@ json\
     ...\
   ]
 }\
-Respons:\
+
+Respons:
 
 json\
 {\
@@ -145,7 +148,7 @@ Parametrar:
 
 id (Number): ID för receptet.
 
-Request Body:\
+Request Body:
 
 json\
 {\
@@ -154,7 +157,8 @@ json\
   "cooking_time": 45,\
   "servings": 6\
 }\
-Respons:\
+
+Respons:
 
 json\
 {\
@@ -175,7 +179,8 @@ json\
   "ingredient_name": "Ny namn",\
   "quantity_type": "Ny typ"\
 }\
-Respons:\
+
+Respons:
 
 json\
 {\
@@ -198,6 +203,7 @@ json\
   "ingredient_id": 2,\
   "quantity": 150\
 }\
+
 Respons:
 
 json\
