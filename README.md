@@ -132,7 +132,7 @@ json\
     },\
     ...\
   ]
-}\
+}
 
 Respons:
 
@@ -156,14 +156,14 @@ json\
   "instructions": "Ny instruktion",\
   "cooking_time": 45,\
   "servings": 6\
-}\
+}
 
 Respons:
 
 json\
 {\
   "message": "Receptet uppdaterades!"\
-}\
+}
 ## 9. PUT /ingredients/:id
 
 ### Beskrivning: Uppdaterar en ingrediens.
@@ -178,14 +178,14 @@ json\
 {\
   "ingredient_name": "Ny namn",\
   "quantity_type": "Ny typ"\
-}\
+}
 
 Respons:
 
 json\
 {\
   "message": "Ingrediensen uppdaterades!"\
-}\
+}
 
 ## 10. PUT /recipe-ingredients/:id
 
@@ -202,7 +202,7 @@ json\
   "recipe_id": 1,\
   "ingredient_id": 2,\
   "quantity": 150\
-}\
+}
 
 Respons:
 
