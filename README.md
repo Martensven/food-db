@@ -13,21 +13,22 @@ Respons:
 json
 "Hello World!"
 
-2. GET /recipes
-Beskrivning: Hämtar alla recept i databasen.
+## 2. GET /recipes
+
+### Beskrivning: Hämtar alla recept i databasen.
 
 Respons:
 
-json
-[
-  {
+json\
+[\
+  {\
     "recipe_id": 1,\
     "recipe_name": "Spaghetti Bolognese",\
     "instructions": "Koka pastan...",\
     "cooking_time": 30,\
     "servings": 4\
-  },
-  ...
+  },\
+  ...\
 ]
 
 ## 3. GET /ingredients
@@ -36,14 +37,14 @@ json
 
 Respons:
 
-json
-[
-  {
+json\
+[\
+  {\
     "ingredient_id": 1,\
     "ingredient_name": "Tomat",\
     "quantity_type": "gram"\
-  },
-  ...
+  },\
+  ...\
 ]
 
 ## 4. GET /recipe/:recipeName
@@ -104,9 +105,9 @@ json\
     {\
       "ingredient_name": "Tomat",\
       "quantity_type": "gram"\
-    },
-    ...
-  ]
+    },\\
+    ...\\
+  ]\\
 }
 
 Respons:
@@ -131,7 +132,7 @@ json\
       "quantity": 100\
     },\
     ...\
-  ]
+  ]\
 }
 
 Respons:
